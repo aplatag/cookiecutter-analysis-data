@@ -1,0 +1,37 @@
+# conda env create --file environment.yml
+# mamba env create --file environment.yml
+name: {{ cookiecutter.project_slug }}
+
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python= {{ cookiecutter.python_version }}
+  - numpy
+  - matplotlib  
+  - pandas
+  - pyprojroot
+  - pip
+  - jupyter
+  - jupyterlab
+
+  {% if cookiecutter.project_packages == "Basic" -%}
+  - spyder
+  - numba
+  - opencv
+  - scipy
+  {% endif -%}
+
+
+  {% if cookiecutter.project_packages == "Full" -%}
+  - keras
+  - tensorflow
+  - seaborn
+  - scikit-learn
+  - jupyter
+  - jupyterlab
+  - spyder
+  - numba
+  - opencv
+  - scipy
+  {% endif -%}

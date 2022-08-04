@@ -1,0 +1,10 @@
+{
+    "project_name": "Project Data Science",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_author_name": "Your name (or your organization)",
+    "project_package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_description": "A short description of the project.",
+    "project_packages": ["Full", "Basic","Minimal"],
+    "python_version": "3.9",
+    "project_version": "0.1.0"
+}
