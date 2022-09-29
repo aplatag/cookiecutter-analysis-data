@@ -4,4 +4,4 @@ channels:
   - defaults
 dependencies:
   - cookiecutter
-prefix: C:\Users\and20\anaconda3\envs\cookiecutter-personal
+

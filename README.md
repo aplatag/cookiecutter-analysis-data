@@ -27,7 +27,11 @@
 ## Requirements
 
 - Conda
-- Cookiecutter Python package
+
+## Installation of Cookiecutter
+```bash
+conda install -c conda-forge cookiecutter
+```
 
 ## Create a new project
 
@@ -57,7 +61,7 @@ cookiecutter https://github.com/aplatag/cookiecutter-analysis-data
 
     ├── README.md          <- Project description.
     ├── data
-    │   ├── processed      <- Data ready to use in the project.
+    │   ├── ready_to_use   <- Data ready to use in the project.
     │   └── raw            <- Original data.
     │
     ├── scripts            <- Project script.
@@ -73,6 +77,9 @@ cookiecutter https://github.com/aplatag/cookiecutter-analysis-data
         │
         ├── preprocessing           
         │   └── make_processing.py  <- Data is processed
+        │
+        ├── methods           
+        |   └── methods.py  <- functions or methods used in the project
         │
         ├── visualization      
         │   └── display.py   <- Function to display data.

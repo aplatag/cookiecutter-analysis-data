@@ -8,7 +8,7 @@ By: {{ cookiecutter.project_author_name}}
 
     ├── README.md          <- Project description.
     ├── data
-    │   ├── processed      <- Data ready to use in the project.
+    │   ├── ready_to_use   <- Data ready to use in the project.
     │   └── raw            <- Original data.
     │
     ├── scripts            <- Project script.
@@ -25,6 +25,9 @@ By: {{ cookiecutter.project_author_name}}
         ├── preprocessing           
         │   └── make_processing.py  <- Data is processed
         │
+        ├── methods           
+        |   └── methods.py  <- functions or methods used in the project
+        │
         ├── visualization      
         │   └── display.py   <- Function to display data.
         │
@@ -35,3 +38,4 @@ By: {{ cookiecutter.project_author_name}}
 
 
 
+        
