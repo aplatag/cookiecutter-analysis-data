@@ -29,6 +29,13 @@
 - Conda
 
 ## Installation of Cookiecutter
+1. Create an environment
+
+```bash
+conda create -n name-environment
+```
+2. Install Cookiecutter
+
 ```bash
 conda install -c conda-forge cookiecutter
 ```
